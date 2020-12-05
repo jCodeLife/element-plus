@@ -10,6 +10,7 @@
 
 <script  lang="ts">
 import {
+  defineComponent,
   computed,
   onMounted,
   inject,
@@ -18,7 +19,7 @@ import {
   selectKey,
 } from './token'
 
-export default {
+export default defineComponent({
   name: 'ElSelectDropdown',
 
   componentName: 'ElSelectDropdown',
@@ -42,5 +43,5 @@ export default {
       isMultiple,
     }
   },
-}
+})
 </script>
